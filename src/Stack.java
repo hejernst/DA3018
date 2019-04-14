@@ -1,10 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Stack {
-
+    private int maxLength = 100;
     private int counter = 0;
-    private double[] stack = new double[100];
+    private double[] stack = new double[maxLength];
 
 
     public boolean isEmpty() {
@@ -37,5 +34,13 @@ public class Stack {
 
     public double[] getStack() {
         return stack;
+    }
+
+    public int getMaxLength() {
+        return maxLength;
+    }
+
+    public void setMaxLength(int maxLength) {
+        this.maxLength = maxLength;
     }
 }

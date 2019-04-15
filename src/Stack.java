@@ -20,7 +20,7 @@ public class Stack {
 
     public double pop() {
         if (counter > 0) {
-            double lastElem = stack[counter];
+            double lastElem = stack[counter-1];
             stack[counter-1] = 0.0;
             counter--;
             return lastElem;
